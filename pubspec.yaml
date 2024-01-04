@@ -1,0 +1,26 @@
+name: sonrize_web
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  easy_localization: ^3.0.3
+  flutter:
+    sdk: flutter
+  font_awesome_flutter: ^10.6.0
+  google_fonts: ^6.1.0
+  hooks_riverpod: ^2.4.9
+  intl: ^0.18.1
+  url_launcher: ^6.2.2
+  url_strategy: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
