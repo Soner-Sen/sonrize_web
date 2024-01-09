@@ -1,14 +1,11 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:sonrize_web/core/values/values.dart';
 import 'package:sonrize_web/ui/screens/about/about_screen.dart';
 import 'package:sonrize_web/ui/screens/contact/contact_screen.dart';
-import 'package:sonrize_web/ui/screens/courses/courses_screen.dart';
+import 'package:sonrize_web/ui/screens/product/product_screen.dart';
 import 'package:sonrize_web/ui/screens/error/error_screen.dart';
 import 'package:sonrize_web/ui/screens/home/home_screen.dart';
-import 'package:sonrize_web/ui/screens/services/services_screen.dart';
 
 final GoRouter routerConfig = GoRouter(
     routes: <RouteBase>[
@@ -25,21 +22,15 @@ final GoRouter routerConfig = GoRouter(
             },
           ),
           GoRoute(
-            path: ConstString.SERVICES_ROUTE,
+            path: ConstString.PRODUCT_ROUTE,
             builder: (BuildContext context, GoRouterState state) {
-              return const ServicesScreen();
-            },
-          ),
-          GoRoute(
-            path: ConstString.COURSES_ROUTE,
-            builder: (BuildContext context, GoRouterState state) {
-              return const CoursesScreen();
+              return const ProductScreen();
             },
           ),
           GoRoute(
             path: ConstString.CONTACT_ROUTE,
             builder: (BuildContext context, GoRouterState state) {
-              return const ContactScreen();
+              return ContactScreen();
             },
           ),
         ],

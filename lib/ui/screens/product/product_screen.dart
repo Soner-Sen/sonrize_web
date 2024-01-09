@@ -1,20 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:sonrize_web/ui/screens/about/widgets/about_body.dart';
-import 'package:sonrize_web/ui/screens/about/widgets/about_header.dart';
+import 'package:sonrize_web/ui/screens/product/widgets/product_body.dart';
+import 'package:sonrize_web/ui/screens/product/widgets/product_header.dart';
 import 'package:sonrize_web/ui/screens/screen_template.dart';
 
-class AboutScreen extends StatefulWidget {
-  const AboutScreen({super.key});
+class ProductScreen extends StatefulWidget {
+  const ProductScreen({super.key});
 
   @override
-  State<AboutScreen> createState() => _AboutScreenState();
+  State<ProductScreen> createState() => _ProductScreenState();
 }
 
-class _AboutScreenState extends State<AboutScreen> {
-  List<Widget> sectionList = [
-    const AboutHeader(),
-    const AboutBody(),
-  ];
+class _ProductScreenState extends State<ProductScreen> {
+  List<Widget> sectionList = [const ProductHeader(), const ProductBody()];
 
   @override
   Widget build(BuildContext context) {
